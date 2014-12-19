@@ -1,0 +1,11 @@
+<template name="journalItem">
+	<div class="journal">
+		<ul class="list-inline">
+			<li><em>{{formattedDate}}</em></li>
+			<li><a href="{{pathFor 'journalEdit'}}">Edit</a></li>
+			<li><a href="#" class="delete">Delete</a></li>
+		</ul>
+		{{#markdown}}{{content}}{{/markdown}}
+		<hr />
+	</div>
+</template>
